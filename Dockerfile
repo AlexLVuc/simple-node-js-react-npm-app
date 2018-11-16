@@ -1,3 +1,5 @@
+FROM node:6-alpine
+
 RUN apt-get update && \
 	apt-get install --reinstall -y ca-certificates && \
 	update-ca-certificates && \
