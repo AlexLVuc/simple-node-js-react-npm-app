@@ -1,7 +1,7 @@
 FROM node:6-alpine
 
-RUN apt-get update && \
-	apt-get install --reinstall -y ca-certificates && \
+RUN apk update && \
+	apk add --reinstall -y ca-certificates && \
 	update-ca-certificates && \
 	curl -sL https://deb.nodesource.com/setup_4.x | bash
 
