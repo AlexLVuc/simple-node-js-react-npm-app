@@ -10,7 +10,5 @@ RUN npm config set registry http://registry.npmjs.org/
 RUN npm config set strict-ssl false 
 RUN npm config set maxSockets 8 
 RUN npm install --unsafe-perm --allow-root --ignore-scripts -d 
-
-EXPOSE 8081
 # ...
 
