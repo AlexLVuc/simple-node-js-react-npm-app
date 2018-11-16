@@ -1,7 +1,7 @@
 pipeline {
     agent {
         dockerfile {
-            args '-p 8081:8081'
+            args '-p 8081:8081 --name jenkins_subcontainer_npm'
         }
     }
     environment {
